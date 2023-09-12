@@ -22,6 +22,19 @@
     font-weight: bold;
     cursor: pointer;
 }
+.button-design-2{
+    padding: 10px 30px;
+    border: none;
+    font-size:medium;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+}
+.error-text{
+    color: red;
+    font-weight: bold;
+    font-size:20px;
+}
 
 .flex-item{
     display: grid;

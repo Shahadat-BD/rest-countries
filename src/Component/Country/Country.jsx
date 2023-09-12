@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Country = ({country,handleAddedCountry}) => {
+const Country = ({country,handleAddedCountry,countryLength}) => {
     const {name,region,capital,area,flags} = country
     const [visited,setVisited]  = useState(false)
     const handleVisitedBtn = () =>{
@@ -15,7 +15,12 @@ const Country = ({country,handleAddedCountry}) => {
              <p>Capital: {capital[0]}</p>
              <p>Area : {area}</p>
              <button onClick={handleVisitedBtn} className='button-design'>{visited ? "visited" : "not visited"}</button> <br /> <br />
-             <button onClick={()=>handleAddedCountry(country)} className='button-design'>added country</button>
+             {
+               countryLength.length >= 5 ? 
+               <button disabled onClick={()=>handleAddedCountry(country)} className='button-design-2'>stop country added</button>
+               :
+               <button onClick={()=>handleAddedCountry(country)} className='button-design'>add country</button>
+             }
         </div>
     );
 };
