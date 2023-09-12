@@ -1,0 +1,45 @@
+.grid-container{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    gap: 30px;
+}
+
+.card-country{
+    background-color: rgba(0, 0, 0, 0.889);
+    color: white;
+    padding: 20px;
+}
+.visited-country{
+    background-color: rgba(226, 70, 38, 0.889);
+    color: white;
+    padding: 20px;
+}
+
+.button-design{
+    padding: 10px 30px;
+    border: none;
+    font-size:medium;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.flex-item{
+    display: grid;
+    grid-template-columns: 70% auto;
+    gap: 10px;
+}
+.flex-item-2{
+    display: flex;
+    margin-top: 15px;
+    gap: 10px;
+}
+.delete-btn{
+    padding: 0px 10px;
+    border: none;
+    font-size:medium;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    height: 50px;
+}
